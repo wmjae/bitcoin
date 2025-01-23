@@ -13,7 +13,7 @@ Each block consists of a sequence of records:
       data: uint8[length]
 
 A record never starts within the last six bytes of a block (since it won't fit).
-Any leftover bytes here form the trailer, which must consist entirely of zero
+Any leftover bytes here from the trailer, which must consist entirely of zero
 bytes and must be skipped by readers.
 
 Aside: if exactly seven bytes are left in the current block, and a new non-zero
